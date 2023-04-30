@@ -5,11 +5,11 @@ function App() {
 
     return (
       <ListGroup>
-        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-        <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-        <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+        <ListGroup.Item>Cras justo odio <button>Presente</button><button>Ausente</button></ListGroup.Item>
+        <ListGroup.Item>Dapibus ac facilisis in  <button>Presente</button><button>Ausente</button></ListGroup.Item>
+        <ListGroup.Item>Morbi leo risus <button>Presente</button><button>Ausente</button></ListGroup.Item>
+        <ListGroup.Item>Porta ac consectetur ac <button>Presente</button><button>Ausente</button></ListGroup.Item>
+        <ListGroup.Item>Vestibulum at eros <button>Presente</button><button>Ausente</button></ListGroup.Item>
       </ListGroup>
     );
   
