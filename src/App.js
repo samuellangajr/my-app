@@ -1,18 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import ListGroup from 'react-bootstrap/ListGroup';
+import Table from './components/table'
 function App() {
 
+  var data = 
+  [
+    {'id': 2, 'name': 'John', 'surname': 'Josh'},
+    {'id': 3, 'name': 'Selena', 'surname': 'Matapa'},
+  ]
     return (
-      <ListGroup>
-        <ListGroup.Item>Cras justo odio <button>Presente</button><button>Ausente</button></ListGroup.Item>
-        <ListGroup.Item>Dapibus ac facilisis in  <button>Presente</button><button>Ausente</button></ListGroup.Item>
-        <ListGroup.Item>Morbi leo risus <button>Presente</button><button>Ausente</button></ListGroup.Item>
-        <ListGroup.Item>Porta ac consectetur ac <button>Presente</button><button>Ausente</button></ListGroup.Item>
-        <ListGroup.Item>Vestibulum at eros <button>Presente</button><button>Ausente</button></ListGroup.Item>
-      </ListGroup>
+      <Table props={data} ></Table>
     );
   
 }
+
+
 
 export default App;
