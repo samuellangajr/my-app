@@ -1,13 +1,15 @@
 import React from "react";
 
+
 export default function table(props) {
     const students = props.props
+
+
 return (
 
   <div  className="container">
 
-
-    <h1 className="mt-20">Lista de presenças</h1>
+    <h1 >Lista de presenças</h1>
     <br></br>
     <br></br>
 
@@ -29,7 +31,7 @@ return (
           <th scope="row">{ student.id }</th>
           <td>{ student.name }</td>
           <td>{ student.surname }</td>
-          <td><button className="btn btn-success ">Presente</button>  <button className="btn btn-danger">Ausente</button></td>
+          <td><button className="btn btn-outline-success">Presente</button>  <button className="btn btn-outline-danger">Ausente</button></td>
         </tr>
 
     ))}
