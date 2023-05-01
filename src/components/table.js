@@ -2,7 +2,10 @@ import React from "react";
 
 
 export default function table(props) {
+  // entregamos o props (forma de acessar os dados de um outro componete) 
     const students = props.props
+    // a variavel "students"=recebe o props(que leva os dados),logo a variavel students leva esses dados
+    
 
 
 return (
