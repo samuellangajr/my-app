@@ -37,3 +37,11 @@
   }
 }
 
+.botaopresente{
+  background-color: green;
+}
+
+.botaoaausente{
+  background-color: red;
+}
+
