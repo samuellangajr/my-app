@@ -69,8 +69,8 @@ export default function Table(props) {
                 </button>{" "}
                 <button
                   className={
-                    "btn btn-outline-danger  active" +
-                    (selectedButtons[index] === "ausente" ? "active" : "")
+                    "btn btn-outline-danger " +
+                    (selectedButtons[index] === "presente" ? "" : "active")
                   }
                   onClick={() => handleClickButton2(index,"ausente")}
                 >
@@ -81,6 +81,7 @@ export default function Table(props) {
           ))}
         </tbody>
       </table>
+      <button class="btn btn-info">Ver relatorio</button>
     </div>
   );
 }
