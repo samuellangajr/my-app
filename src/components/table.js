@@ -81,7 +81,21 @@ export default function Table(props) {
           ))}
         </tbody>
       </table>
-      <button class="btn btn-info">Ver relatorio</button>
+      <button
+        className="btn btn-info"
+        onClick={() => {
+          const presentStudents = students.filter(
+            (student, index) => selectedButtons[index] === "presente"
+          );
+          const presentStudentsNames = presentStudents.map(
+            (student) => `${student.name} ${student.surname}`
+          );
+          alert(`Estudantes presentes: ${presentStudentsNames.join(", ")}`);
+        }}
+      >
+
+  Ver relatório
+</button>
     </div>
   );
 }
