@@ -17,8 +17,9 @@ function App() {
     {'id': 1098, 'name': 'Victoria', 'surname': 'Luis'},
     {'id': 7601, 'name': 'Serena', 'surname': 'Maconne'},
   ]
+  // O componente "App" ira retornaro o componente table
     return (
-      <Table props={data} ></Table>
+      <Table props={data}></Table>
     );
   
 }
