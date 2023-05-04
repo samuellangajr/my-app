@@ -3,15 +3,35 @@ import React from "react";
 export default function Table(props) {
   const [selectedButtons, setSelectedButtons] = React.useState({});
 
+  
+  // Adiciona 'ausente' como valor padrão para todos os estudantes
+  React.useEffect(() => {
+    const newSelectedButtons = {};
+    props.props.forEach((student, index) => {
+      newSelectedButtons[index] = "ausente";
+    });
+    setSelectedButtons(newSelectedButtons);
+  }, [props.props]);
+
+
+
   function handleClickButton1(index) {
     setSelectedButtons(prevState => {
       return { ...prevState, [index]: 'presente' };
+
+    
+
     });
   }
 
   function handleClickButton2(index) {
     setSelectedButtons(prevState => {
+
+      
       return { ...prevState, [index]: 'ausente' };
+      
+
+
     });
   }
 
@@ -43,16 +63,16 @@ export default function Table(props) {
                     "btn btn-outline-success " +
                     (selectedButtons[index] === "presente" ? "active" : "")
                   }
-                  onClick={() => handleClickButton1(index)}
+                  onClick={() => handleClickButton1(index,"ausente")}
                 >
                   Presente
                 </button>{" "}
                 <button
                   className={
-                    "btn btn-outline-danger " +
+                    "btn btn-outline-danger  active" +
                     (selectedButtons[index] === "ausente" ? "active" : "")
                   }
-                  onClick={() => handleClickButton2(index)}
+                  onClick={() => handleClickButton2(index,"ausente")}
                 >
                   Ausente
                 </button>
