@@ -1,10 +1,10 @@
 import './App.css';
-import Table from './components/table'
+import Table from './components/table';
 function App() {
 
   var data = 
-  // a variavel data e um array de objectos
-  [{'id': 2000, 'name': 'John', 'surname': 'Josh'}, 
+  [
+    {'id': 2000, 'name': 'John', 'surname': 'Josh', 'state':1},
     {'id': 3890, 'name': 'Selena', 'surname': 'Matapa'},
     {'id': 6790, 'name': 'Samuel', 'surname': 'Langa'},
     {'id': 5542, 'name': 'Hassan', 'surname': 'Mutole'},
